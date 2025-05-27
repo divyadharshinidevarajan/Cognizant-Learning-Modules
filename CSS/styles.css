@@ -1,0 +1,234 @@
+/* ================================== */
+/* Reset and Base Styles              */
+/* ================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply background and base font */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f9f9f9, #e0f7fa);
+  color: #333;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+/* ================================== */
+/* Header Banner                      */
+/* ================================== */
+#welcomeBanner {
+  background: linear-gradient(to right, #007BFF, #0056b3);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+/* Highlight style */
+.highlight {
+  background-color: #ffeb3b;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* ================================== */
+/* Navigation                         */
+/* ================================== */
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+nav a {
+  color: #007BFF;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+nav a:visited {
+  color: #6f42c1;
+}
+nav a:hover {
+  background-color: #cce5ff;
+}
+nav a:active {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* ================================== */
+/* Event Gallery Table                */
+/* ================================== */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+}
+
+tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+/* Event images */
+.event-img {
+  border: 3px solid #555;
+  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* ================================== */
+/* Form Styling                       */
+/* ================================== */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+label {
+   display: block;
+  margin-bottom: 2px; /* Tighten spacing between label and field */
+  font-weight: 500;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid #007BFF;
+}
+
+/* Submit button */
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Output message */
+#outputMsg {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Character count */
+#charCount {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ================================== */
+/* Video and Geo Section              */
+/* ================================== */
+section {
+  margin-top: 30px;
+  padding: 10px;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+}
+
+#videoMsg, #geoOutput {
+  text-align: center;
+  font-weight: bold;
+  color: #007BFF;
+  margin-top: 10px;
+}
+
+/* ================================== */
+/* Multi-Column Layout Example        */
+/* ================================== */
+.news-article {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+  padding: 20px;
+}
+
+/* ================================== */
+/* Footer                             */
+/* ================================== */
+footer {
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+
+/* ================================== */
+/* Responsive Design                  */
+/* ================================== */
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  table, form, video {
+    width: 100%;
+  }
+
+  .event-img {
+    width: 80%;
+  }
+
+  body {
+    font-size: 15px;
+  }
+}
